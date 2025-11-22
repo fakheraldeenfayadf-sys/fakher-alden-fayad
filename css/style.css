@@ -47,3 +47,89 @@ footer{padding:2rem 0;color:var(--muted);font-size:0.95rem;border-top:1px solid 
 .reveal.visible{opacity:1;transform:none}
 /* small utilities */
 .kv{color:var(--muted);font-size:.95rem}
+
+/* ===== مقالات: المجموعات الرئيسية ===== */
+
+.categories{
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  margin-top:2rem;
+}
+
+.category-block{
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,0.05);
+  padding:1.5rem;
+  border-radius:14px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.4);
+}
+
+.category-title{
+  color:var(--gold);
+  font-size:1.4rem;
+  font-weight:700;
+  margin-bottom:1rem;
+}
+
+/* ===== المجموعات الفرعية ===== */
+
+.sub-categories{
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+  margin-top:.5rem;
+}
+
+.sub-category{
+  background:var(--glass);
+  border:1px solid rgba(255,255,255,0.04);
+  padding:1rem;
+  border-radius:10px;
+}
+
+.sub-title{
+  font-size:1.1rem;
+  margin-bottom:.7rem;
+  font-weight:600;
+  color:#fff;
+}
+
+/* ===== شبكة المقالات داخل كل مجموعة ===== */
+
+.articles-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:1rem;
+  margin-top:.5rem;
+}
+
+.article-card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03));
+  border:1px solid rgba(255,255,255,0.04);
+  padding:1rem;
+  border-radius:10px;
+  transition:300ms;
+}
+
+.article-card:hover{
+  transform:translateY(-4px);
+  border-color:var(--gold);
+}
+
+.article-card h4{
+  color:#fff;
+  margin:0 0 .4rem;
+  font-size:1rem;
+}
+
+.article-card .meta{
+  color:var(--muted);
+  font-size:.85rem;
+  margin-bottom:.3rem;
+}
+
+.article-card p{
+  color:var(--muted);
+  font-size:.9rem;
+}
